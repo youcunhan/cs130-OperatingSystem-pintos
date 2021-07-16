@@ -32,7 +32,7 @@ sudo env SRCDIR=$SRCDIR PINTOSDIR=$PINTOSDIR DSTDIR=$DSTDIR sh $PINTOSDIR/src/mi
 # Add PATH environment variable for Pintos
 
 echo "" >> $HOME/.bashrc
-echo "export PATH=\"\$PATH:$PINTOSDIR/src/utils\"" >> $HOME/.bashrc
+echo "export PATH=\"\$PINTOSDIR/src/utils:$PATH\"" >> $HOME/.bashrc
 
 # Patch for pintos-gdb
 sed -i "/GDBMACROS=\/usr\/class\/cs140\/pintos\/pintos\/src\/misc\/gdb-macros/c\GDBMACROS=$PINTOSDIR/src/misc/gdb-macros" $PINTOSDIR/src/utils/pintos-gdb
