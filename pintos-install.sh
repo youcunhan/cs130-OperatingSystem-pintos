@@ -40,7 +40,7 @@ sed -i "/GDBMACROS=\/usr\/class\/cs140\/pintos\/pintos\/src\/misc\/gdb-macros/c\
 # Compile the remaining Pintos utilities
 version=$(lsb_release -r --short)
 if [ ${version:0:2} = "20" ]; then
-    sed -i '10,10d' ./squish-pty.c $PINTOSDIR/src/utils/squish-pty.c
+    sed -i '10,10d' $PINTOSDIR/src/utils/squish-pty.c
     sed -i '287,292d' $PINTOSDIR/src/utils/squish-pty.c
     sed -i '11,11d' $PINTOSDIR/src/utils/squish-unix.c
 fi
