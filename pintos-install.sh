@@ -1,4 +1,7 @@
 #! /bin/bash
+# Author: You Cunhan
+# youch@shanghaitech.edu.cn
+
 # To install gc, g++ and other required package
 echo "-------Start Step1 Download dependencies-------"
 sudo apt update
